@@ -1,0 +1,62 @@
+August 28 2024, we are now in the ObjectsManager::createTrialWorld
+    - Create GraphicsObject related part
+    - How to create/initialize Graphics things?
+        - In Object Manager(just a name, not the real manager in the project) (Okay, there is one ObjectsManager, but it is a temporary solution),
+          keep QGraphicsObject, and make XXXXGraphicsComponent as QObject.
+        - Keep QGraphicsObject inside QObject is for the purpose, that hide the implementation of graphics system.
+        - Using QObject, is we need its signal/slot system.
+        - Same structure for Graphics View and Graphics Scene
+    - Where shall we store the GraphicsViewObject and GraphicsSceneObject?
+        - In Trial world, we keep GraphicsViewObject and GraphicsSceneObject inside worldBGWindow.
+        - I am not sure whether this is a good idea, might be better to put them inside ObjectManager.
+        - We may have more than single GraphicsScene and GraphicsView.
+            - If so, to use worldBGWindow to maintain might be a bad idea.
+    
+    - Now let's create graphics objects! In the Object manager
+    
+    - Not using static_cast pattern to convert basic class into specific one, which make abstract no sense.
+    
+    - Using worldBGWindow to initialize whole graphics things, in the Trial world version.
+    
+    - Using Instance Manager, to hold all Instance required Objects.
+      But! Only Instance Manager is the Instance. For the purpose that reduce the number of instance objects.
+
+September 7th 2024, now are creating the graphics world
+    - General Objects can inheirt from QOjbect. Qt is a big feature of "MyWorld".
+      We can hide detail implementation behind. However, QObject with Q_OBJECT can be explicit, due to we need Signal and Slot.
+      On the other hand, when we will not use Qt anymore, we anyway will change signal/slot system, which means, the modification cannot be avoided.
+    - The Graphics View and Scene have hard code geometry, will be improved during Trial world development.
+    - CAUTION! Graphics Scene and View both have event available. Events defined on these two Objects can bring different Result.
+      Think over more when defining the events
+      
+September 8th 2024, to initialize GraphicsView, Scene and Objects correctly, then show them.
+    - learn the information of QGraphicsWidget.
+    
+9/22 2024, no necessary to define SceneRectangle in Trial version. As by default, the SceneRectangle is dynamicly changed/created/modified by Qt.
+           neither for QGraphicsView
+    - Now, add the graphics items! But to is the proper way?
+    - Go deeper into the Factory mode and related things/topics.
+    - In parallel, in Trial, we use static_cast first.
+    
+12/27/2024, now we have new HP Laptop!
+
+01/12/2025, make clear why Container.push_back brings an endless loop crash?
+
+01/18/2025, crash solved, now make objects generated, with at least number printed on the graphics view!
+            1. MapItem or let's say, all graphics related item should have one item inherited from the QGraphicsItem.
+               This is missing, and need to design properly, even for the Trial World.      
+
+01/19/2025, we have one graphics inherited item, Class name MGraphicsObject. Could use it for trial version.     
+            ToDo, implement the paint and boundingRect of class LandQGraphicsItem, then generate it! Paint it out!
+            ToDo, extend the implementation of LandObject->setPosition | setHeight | setWidth          
+
+------------------------------------------------------------------------------------------------
+
+God Trial World
+
+04/06/2025, re-make, WorldBG, LandMutter, LebenMutter.
+            WorldBG to be the main board of Whole world.
+            LandMutter to create Land Objects.
+            LebenMutter to create Leben Objects.            
+            On the main Board, WorldBG, to handle creation of Land and Leben, and put Leben onto the Land.
+            Named, God, Trial World.
