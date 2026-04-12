@@ -18,6 +18,7 @@ public:
     void setPosX(int);
     void setPoxY(int);
 
+    /* still not clear what to do */
     void updateComp();
 
 private:

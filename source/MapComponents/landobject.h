@@ -26,7 +26,7 @@ public:
     void updateWholeObject() override;
 
     // Trial world work around solution
-    void setPosition(int posX, int poxY);
+    void setPosition(int posX, int posY);
 
     void setHeight(int height);
     void setWidth(int width);

@@ -60,3 +60,36 @@ God Trial World
             LebenMutter to create Leben Objects.            
             On the main Board, WorldBG, to handle creation of Land and Leben, and put Leben onto the Land.
             Named, God, Trial World.
+
+
+------------------------------------------------------------------------------------------------
+
+03/29/2026, To make graphics items have thing painted
+            Please implement the methods in landpropertycomp.cpp
+
+            Current trial world's graphics view is 1024*768, and each land graphics component's size is 200 * 200
+
+            To implement the task of this day, to implement:
+            LandQGraphicsItem(MGraphicsObject) -> to have set and get geometry methods, to have position and size been set
+            LandObject -> to initialize LandQGraphicsItem properly, to make it be able to paint
+            with these, we could then see our first 9 block simple world.
+
+            Next steps, character, key event, mouse event then could proceed.
+
+04/11/2026, continue the task above.
+            Now, to do the proper initialization in the LandObject, to have trial map blocks painted.
+
+            No, LandObject's initialization is Fine, but LandObject -> LandQGraphicsItem,
+            how the position, height and weight to be transmitted, and painted are not implemented
+
+            Yes, correct direction.
+            First, implement the LandMapComp of the LandObject, then would be
+            "LandObject updates LandMapComp and landpropertycomp's values into LandQGraphicsItem"
+            And by these, we will see the map blocks first time painted
+
+04/12/2026, continue tasks above.
+            To paint trial world's map blocks.
+            Now to implement WorldBGWindow & LandObject,
+            to update map property into LandQGraphicsItem, AND paint it.
+
+            IN PARALLEL, clean all "note" comments, and put them into the file "Note"

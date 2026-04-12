@@ -5,6 +5,7 @@
 // class pure virtual, and move those status lists into others Property component
 
 // decided, make this pure virtual -- 10.8.2023
+// and put properties into this childern. -- 04.11.2026
 
 class BasePropertyComp
 {

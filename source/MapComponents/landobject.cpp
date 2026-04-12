@@ -114,9 +114,9 @@ void LandObject::updateWholeObject()
 
 // for Trial world
 // Todo, set coordinate into LandQGrahpics Item, following three methods
-void LandObject::setPosition(int posX, int poxY) {
-    // should be
-    // m_graphicComp_p->setPos();
+void LandObject::setPosition(int posX, int posY) {
+    m_baseMapComp_p->setPosX(posX);
+    m_baseMapComp_p->setPoxY(posY);
 }
 
 void LandObject::setHeight(int height)

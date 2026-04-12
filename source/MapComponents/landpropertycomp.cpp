@@ -1,20 +1,34 @@
 #include "landpropertycomp.h"
 
-LandPropertyComp::LandPropertyComp() {}
+LandPropertyComp::LandPropertyComp():
+    statusOnObject_(0),
+    statusInsideObject_(0),
+    statusBelowObject_(0),
+    state_(0),
+    height_(200),
+    width_(200){}
 
-void LandPropertyComp::setDefaultHeight(void) {}
+void LandPropertyComp::setDefaultHeight(void) {
+    this->height_ = 200;
+}
 
-void LandPropertyComp::setDefaultWidth(void) {}
+void LandPropertyComp::setDefaultWidth(void) {
+    this->width_ = 200;
+}
 
 int LandPropertyComp::getWidth(void) const
 {
-    return 0;
+    return this->width_;
 }
 
 int LandPropertyComp::getHeight(void) const
 {
-    return 0;
+    return this->height_;
 }
 
-void LandPropertyComp::setWidth(int weight) {}
-void LandPropertyComp::setHeight(int height) {}
+void LandPropertyComp::setWidth(int width) {
+    this->width_ = width;
+}
+void LandPropertyComp::setHeight(int height) {
+    this->height_ = height;
+}

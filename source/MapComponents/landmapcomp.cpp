@@ -26,6 +26,7 @@ void LandMapComp::setPoxY(int positionY)
     posY_ = positionY;
 }
 
+/* still not clear what to do */
 void LandMapComp::updateComp()
 {
 

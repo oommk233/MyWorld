@@ -41,6 +41,10 @@ private:
 
     // like, alive, dead, no life and so on
     int state_;
+
+    // for the trial world, the size of each land block
+    int height_;
+    int width_;
 };
 
 #endif // LANDPROPERTYCOMP_H
