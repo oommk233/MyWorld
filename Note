@@ -1,0 +1,68 @@
+--------
+
+WorldBGWindow::createTrialGrahpicsWorld()
+// We create GraphicsScene and View by hard code in Trial World
+// And should be improved during development of Trial World
+
+// Set Scene and View Rectangle and Geometry
+
+// Set Scene Retangle by default first, in trial version
+// sceneObject_->setSceneRectangle(0, 0, 0, 0);
+// And same for the Graphics View
+// viewObject->setSceneRect(0, 0, 0, 0);
+
+// okay, how is the proper way to add graphicsItem?
+
+// lets say in trial first version, we use static_cast for temporary solution
+
+--------
+
+Now! Let's define the main loop in natural words.
+
+The default defination of this mainloop, we copy/paste the general idea of the Internet
+
+
+// One Frame means one whole main loop is done.
+//
+void mainloop_V1(void)
+{
+    // Caution! Render() means, QT GUI painting!
+    // So, maybe should reduce the calculation
+
+    calculate time of each frame time?
+
+    do Object Property update
+
+    do QT GUI Paint
+}
+
+
+void mainloop_V2_From_Unity(void)
+{
+    // Just simply copy/paste event loop from Unity, at first.
+
+    Awake
+      |
+    OnEnable
+      |
+    Reset
+      |
+    Start
+      |
+    FixedUpdate -- Internal animation update -- Internal physics update -- Internal animation update
+      |
+    Input Events
+      |
+    Update  --  Game Logic
+      |
+    Scene Rendering (Unclear here, the difference from FixedUpdate)
+      |
+    GUI Rendering
+      |
+    End of frame
+      |
+    Application Pause
+      |
+    Application Quit
+
+}

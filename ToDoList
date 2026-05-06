@@ -1,4 +1,4 @@
-August 28 2024, we are now in the ObjectsManager::createTrialWorld
+-August 28 2024, we are now in the ObjectsManager::createTrialWorld
     - Create GraphicsObject related part
     - How to create/initialize Graphics things?
         - In Object Manager(just a name, not the real manager in the project) (Okay, there is one ObjectsManager, but it is a temporary solution),
@@ -93,3 +93,79 @@ God Trial World
             to update map property into LandQGraphicsItem, AND paint it.
 
             IN PARALLEL, clean all "note" comments, and put them into the file "Note"
+------------------------------------------------
+
+04/13/2026, Continue the tasks above.
+            Qt has its own event loop to update QGraphicsItems
+            For MyWorld, how and when, to update Properties of Objects into the Graphics' is the problem/task now to do
+            Further more, for the Trial world, to accept/capture the keyboard event, and do a proper update is important
+
+            BE AWARE, the biggest problem is, how to implement this "update" mechanism, by "MyWorld" own.
+            I mean, to do this "update"(update properties into Graphics') manually.
+            HOW and WHERE?
+
+04/17/2026, Continue the tasks above.
+            Okay, now we must implement a event loop in the Trial World.
+            Question is, in which class, and how to update the main loop + QGraphicsObject render()?
+
+            Please be Attened!!!
+            UpdateMachine, is to do the updates, regarding the Objects' property, and user input event, and Objects' event and so on.
+            A Render(), is to do Graphics Items painting.
+
+            A Question upon the QT is, how to define Render() of the Trial World, of the QT implementation.
+            Might be the QPaintEvent? But the QPaintEvent for each QGraphicsItem or the one of QT main loop?
+
+04/18/2026, Question, is to put this main loop into the WorldBlackBoard, or to create a new Class/Object for it?
+            The key point is whether this Main Loop would have more potential functionality/responsiblity? Or, only care that the main loop.
+            In real world, things might happen at the same time - in parallel.
+            However,  in the Computer world, at least currently, all need priority. And they must happen step by step. That is the logic for the game too.
+            Instead of considering how to make things happen in "parallel", better to think about, how to make my loop better!
+
+04/21/2026, Just continue the tasks above.
+            Create one mainloop by copying/pasting the event loop from Unity.
+            Then try to take it as mine.
+
+04/24/2026, Now, we are aware of that the core element of the Game, is the FRAME
+            The Frame is the atmoic element of the Game, by my current understanding.
+            All things are shown (By GUI) only in each FRAME, and by the reason of "what we see should be what we get",
+            the physic calculation and user input, should be same as the GUI displaying.
+            This means, one FRAME, is like one smallest step (CUT) of the game world.
+
+            For the Game Programming, to make this smallest step -- FRAME -- work as expected is the greatest topic.
+            Nice progress!
+
+            In the Trial World, we will put the FRAME handling inside UpdateMachine, by using the module from Unity3D.
+            Now Question is, what is the proper postion for the UpdateMachine.
+
+04/26/2026, now is starting implementing Update Machine.
+            The first question is, for the Update Machine, is it in the main thread or gives it a new thread?
+
+            The Main loop shall stay at the main thread, as this loop shall anyway not be blocked!
+            Other loops, for example, to trick User inputs.
+
+            New question met. The WorldBlackBoard is QObject, but WorldBGWindow is a QMainWindow which is a GUI Thread.
+            But put the UpdateMachine inside WorldBlackBoard is hard to handle the Machine......
+            So, how to continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

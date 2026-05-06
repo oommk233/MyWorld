@@ -51,28 +51,10 @@ private slots:
 
     void slotLogoPageClosed(void);
 
-
-// private method
-
 private:
-    // first try, to enter the world
-    // with basic map components
-    // new start!!!!
-    // *********************************************************
-    // to generate the map components, we shall use factory mode
-    // *********************************************************
-
-    // Need a private factory member?
-    // So we need a big factory Class system.
     void loadBasicWorld(void);
 
 private:
-
-    // Use pointer here first
-    // Later if necessary, could change to the objects
-
-    // These shall be re-worked
-    // 8/6/2024
 
     LogoPage * m_logoWidget_p;
     UpdateMachine * m_updateMachine_p;

@@ -50,20 +50,6 @@ void WorldBGWindow::createTrialWorldObjects(void)
 
 void WorldBGWindow::createTrialGraphicsWorld(void)
 {
-    // We create GraphicsScene and View by hard code in Trial World
-    // And should be improved during development of Trial World
-
-    // Set Scene and View Rectangle and Geometry
-
-    // Set Scene Retangle by default first, in trial version
-    // sceneObject_->setSceneRectangle(0, 0, 0, 0);
-    // And same for the Graphics View
-    // viewObject->setSceneRect(0, 0, 0, 0);
-
-    // okay, how is the proper way to add graphicsItem?
-
-    // lets say in trial first version, we use static_cast for temporary solution
-
     auto itemList = objectsManager_->getTrialWorldLandObjectList();
 
     for (auto itemIt : itemList) {
