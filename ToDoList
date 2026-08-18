@@ -147,7 +147,23 @@ God Trial World
             But put the UpdateMachine inside WorldBlackBoard is hard to handle the Machine......
             So, how to continue.
 
+08/18/2026, Back to the phase "Little by little to create things". To make the UpdateMachine by one or two steps, makes me tired and boring,
+            and not clear where to go into.
+            So, first, keep the UpdateMachine, its current implementation.
+            Then, go back into one little thing by one little target implement mode.
+            
+            1, No GUI painting, by using debug message to simulate GUI painting.
+            2, To have land, and object (User Controlling one).
+            3, To have keyboard event. 
+            4, Verifying all inputs and results by Debug information.
 
+            So, the target will be following:
+            
+            a. Checking current implementation, the number of land shall be printed out? If not, fix it.
+            b. Creating a Character Object, the shall be put onto the Land Number 5, shall print its position out, the Number 5.
+            c. The Character Object, shall accept and print keyboard event, to show pressed key.
+            d. By keyboard event, the Character Object shall be able to change its Land Number.
+            e. Optimizing the codes.
 
 
 
