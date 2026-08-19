@@ -1,4 +1,5 @@
 #include "worldbgwindow.h"
+#include <QDebug>
 #include "MapComponents/landobject.h"
 
 WorldBGWindow::WorldBGWindow(QObject *parent)
@@ -55,6 +56,11 @@ void WorldBGWindow::createTrialGraphicsWorld(void)
     for (auto itemIt : itemList) {
         auto graphicsItem = itemIt->getGraphicsItem();
         sceneObject_->addItems(graphicsItem);
+
+        qDebug() << QString("Added item, its map postion, X : %1, Y : %2")
+                        .arg(itemIt->positionX())
+                        .arg(itemIt->positionY())
+                 << Qt::endl;
     }
 
     return;

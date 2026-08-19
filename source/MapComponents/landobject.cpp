@@ -116,7 +116,7 @@ void LandObject::updateWholeObject()
 // Todo, set coordinate into LandQGrahpics Item, following three methods
 void LandObject::setPosition(int posX, int posY) {
     m_baseMapComp_p->setPosX(posX);
-    m_baseMapComp_p->setPoxY(posY);
+    m_baseMapComp_p->setPosY(posY);
 }
 
 void LandObject::setHeight(int height)
@@ -137,6 +137,16 @@ void LandObject::setGraphicsGeometry(int posX, int posY, int width, int height, 
 QGraphicsObject *LandObject::getGraphicsItem(void)
 {
     return m_graphicComp_p->getGraphicsObject();
+}
+
+int LandObject::positionX(void)
+{
+    return m_baseMapComp_p->posX();
+}
+
+int LandObject::positionY(void)
+{
+    return m_baseMapComp_p->posY();
 }
 
 void LandObject::simpleInitialization()

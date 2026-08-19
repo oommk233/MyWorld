@@ -11,7 +11,7 @@ int LandMapComp::posX() const
     return posX_;
 }
 
-int LandMapComp::poxY() const
+int LandMapComp::posY() const
 {
     return posY_;
 }
@@ -21,7 +21,7 @@ void LandMapComp::setPosX(int positionX)
     posX_ = positionX;
 }
 
-void LandMapComp::setPoxY(int positionY)
+void LandMapComp::setPosY(int positionY)
 {
     posY_ = positionY;
 }

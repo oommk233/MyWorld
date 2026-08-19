@@ -40,6 +40,10 @@ public:
 
     QGraphicsObject *getGraphicsItem(void) override;
 
+    // Debug information for Trial version
+    int positionX(void);
+    int positionY(void);
+
     // private functions/methods
 private:
 

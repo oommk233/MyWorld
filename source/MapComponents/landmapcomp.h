@@ -14,9 +14,9 @@ public:
     LandMapComp &operator=(LandMapComp &&);*/
 
     int posX() const;
-    int poxY() const;
+    int posY() const;
     void setPosX(int);
-    void setPoxY(int);
+    void setPosY(int);
 
     /* still not clear what to do */
     void updateComp();
