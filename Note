@@ -72,5 +72,7 @@ void mainloop_V2_From_Unity(void)
 The Golden Rule:
     
     1. The Game, the core of it, is the Calculation.
-    2. All objects are only havint States and Status.
-    3. User inputs, and the 
+    2. All objects are only having States and Status. States and Status can be changedable or not.
+    3. User inputs, and the World Rules (Designed), CAN change objects States and Status.
+    4. First, The Game, this whole world is working as the Golded Rule ---- All Objects, are changing and being changed, by "User Inputs" and "Pre-designed Rules", ONLY.
+    5. Second, each "Minimum Operation" can ONLY happen in a Line, which means all things have to happen/be happened, one by one, step by step. So the order/sequence of these happening, is most important, in the Calculation.
