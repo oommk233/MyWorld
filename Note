@@ -66,3 +66,11 @@ void mainloop_V2_From_Unity(void)
     Application Quit
 
 }
+
+########################################################################################################
+
+The Golden Rule:
+    
+    1. The Game, the core of it, is the Calculation.
+    2. All objects are only havint States and Status.
+    3. User inputs, and the 

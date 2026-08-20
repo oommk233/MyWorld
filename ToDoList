@@ -159,11 +159,13 @@ God Trial World
 
             So, the target will be following:
             
-            a. Checking current implementation, the number of land shall be printed out? If not, fix it.
+            a. Checking current implementation, the number of land shall be printed out? If not, fix it. (Done)
+            aa.To note the golden rule onto the Gitlab server.
             b. Creating a Character Object, the shall be put onto the Land Number 5, shall print its position out, the Number 5.
             c. The Character Object, shall accept and print keyboard event, to show pressed key.
             d. By keyboard event, the Character Object shall be able to change its Land Number.
             e. Optimizing the codes.
+
 
 
 
