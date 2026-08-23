@@ -34,6 +34,7 @@ set(TOTEM_BRANCH_DIR ${DUMMY_DIR}/TotemBranches)
 set(BASE_COMPONENT_DIR ${DUMMY_DIR}/BaseComponents)
 set(COMMAND_PACKAGE_DIR ${DUMMY_DIR}/CommandPackage)
 set(MAP_COMPONENT_DIR ${DUMMY_DIR}/MapComponents)
+set(LEBEN_GEGENSTAND_DIR ${DUMMY_DIR}/LebenGegenstand)
 set(GRAPHIC_OBJECT_DIR ${DUMMY_DIR}/GraphicsObjects)
 set(OBJECT_MANAGER_DIR ${DUMMY_DIR}/ObjectsManager)
 set(GUI_MANAGER_DIR ${DUMMY_DIR}/GUIManager)
@@ -89,6 +90,10 @@ set(MAP_COMPONENT_SOURCE
         ${MAP_COMPONENT_DIR}/landobject.cpp
         ${MAP_COMPONENT_DIR}/landpropertycomp.h
         ${MAP_COMPONENT_DIR}/landpropertycomp.cpp)
+
+set(LEBEN_GEGENSTAND_SOURCE
+        ${LEBEN_GEGENSTAND_DIR}/livingobject.h
+        ${LEBEN_GEGENSTAND_DIR}/livingobject.cpp)
         
 set(GRAPHIC_OBJECT_SOURCE 
         ${GRAPHIC_OBJECT_DIR}/landqgraphicsitem.h
@@ -128,6 +133,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${OBJECT_MANAGER_SOURCE}
         ${GUI_MANAGER_SOURCE}
         ${GOD_TRIAL_SOURCE}
+        ${LEBEN_GEGENSTAND_SOURCE}
     )
 else()
     if(ANDROID)
