@@ -93,7 +93,13 @@ set(MAP_COMPONENT_SOURCE
 
 set(LEBEN_GEGENSTAND_SOURCE
         ${LEBEN_GEGENSTAND_DIR}/livingobject.h
-        ${LEBEN_GEGENSTAND_DIR}/livingobject.cpp)
+        ${LEBEN_GEGENSTAND_DIR}/livingobject.cpp
+        ${LEBEN_GEGENSTAND_DIR}/livinggraphiccomp.h
+        ${LEBEN_GEGENSTAND_DIR}/livinggraphiccomp.cpp
+        ${LEBEN_GEGENSTAND_DIR}/livingmapcomp.h
+        ${LEBEN_GEGENSTAND_DIR}/livingmapcomp.cpp
+        ${LEBEN_GEGENSTAND_DIR}/livingpropertycomp.h
+        ${LEBEN_GEGENSTAND_DIR}/livingpropertycomp.cpp)
         
 set(GRAPHIC_OBJECT_SOURCE 
         ${GRAPHIC_OBJECT_DIR}/landqgraphicsitem.h
