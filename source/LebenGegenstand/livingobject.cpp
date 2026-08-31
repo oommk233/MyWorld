@@ -6,7 +6,7 @@ LivingObject::LivingObject() :
 
 LivingObject::~LivingObject()
 {
-
+    // for changing
 }
 
 void LivingObject::initialization(void) {}
