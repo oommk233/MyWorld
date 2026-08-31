@@ -2,6 +2,9 @@
 #define LIVINGOBJECT_H
 
 #include "BaseComponents/baseobject.h"
+#include "LebenGegenstand/livinggraphiccomp.h"
+#include "LebenGegenstand/livingmapcomp.h"
+#include "LebenGegenstand/livingpropertycomp.h"
 
 /* In trial version, using same structure as the MapComponents
  * 
@@ -21,6 +24,11 @@ public:
     virtual ~LivingObject();
 
 private:
+    void initialization(void);
+
+    LivingGraphicComp *livingGraphicComp_;
+    LivingMapComp *LivingMapComp_;
+    LivingPropertyComp *LivingPropertyComp_;
 };
 
 #endif // LIVINGOBJECT_H

@@ -8,3 +8,5 @@ LivingObject::~LivingObject()
 {
 
 }
+
+void LivingObject::initialization(void) {}
