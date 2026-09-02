@@ -140,6 +140,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${GUI_MANAGER_SOURCE}
         ${GOD_TRIAL_SOURCE}
         ${LEBEN_GEGENSTAND_SOURCE}
+        source/GraphicsObjects/lebengraphikitem.h source/GraphicsObjects/lebengraphikitem.cpp
     )
 else()
     if(ANDROID)
