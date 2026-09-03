@@ -1,7 +1,7 @@
 #ifndef LANDQGRAPHICSITEM_H
 #define LANDQGRAPHICSITEM_H
 
-#include "source/GraphicsObjects/mgraphicsobject.h"
+#include "GraphicsObjects/mgraphicsobject.h"
 
 class LandQGraphicsItem : public MGraphicsObject
 {
