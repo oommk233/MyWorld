@@ -27,8 +27,8 @@ private:
     void initialization(void);
 
     LivingGraphicComp *livingGraphicComp_;
-    LivingMapComp *LivingMapComp_;
-    LivingPropertyComp *LivingPropertyComp_;
+    LivingMapComp *livingMapComp_;
+    LivingPropertyComp *livingPropertyComp_;
 };
 
 #endif // LIVINGOBJECT_H
