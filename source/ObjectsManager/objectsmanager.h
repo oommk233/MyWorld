@@ -28,6 +28,7 @@
 // **************************************************************************
 
 #include "BaseComponents/baseobject.h"
+#include "LebenGegenstand/livingobject.h"
 #include "MapComponents/landobject.h"
 
 #include <QList>
@@ -46,7 +47,11 @@ public:
     // We use this class as factory for trail version
     void createTrialWorldLandObjects(void);
 
+    void createTrialCharacterObject(void);
+
     QList<LandObject *> getTrialWorldLandObjectList(void);
+
+    QList<LivingObject *> getTrialCharacterObjectList(void);
 
 private:
     LandObject *createLandObject(void);

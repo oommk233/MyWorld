@@ -52,7 +52,14 @@ void ObjectsManager::createTrialWorldLandObjects(void)
     return;
 }
 
+void ObjectsManager::createTrialCharacterObject(void) {}
+
 QList<LandObject *> ObjectsManager::getTrialWorldLandObjectList(void)
 {
     return m_landObjectList_;
+}
+
+QList<LandObject *> ObjectsManager::getTrialCharacterObjectList(void)
+{
+    return QList<LandObject *>;
 }
