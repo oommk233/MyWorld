@@ -52,14 +52,18 @@ void ObjectsManager::createTrialWorldLandObjects(void)
     return;
 }
 
-void ObjectsManager::createTrialCharacterObject(void) {}
+void ObjectsManager::createTrialCharacterObject(void) {
+    // Now let's create our first Character in the Trial world
+    // To make it living, and accept keyboard event!
+
+}
 
 QList<LandObject *> ObjectsManager::getTrialWorldLandObjectList(void)
 {
     return m_landObjectList_;
 }
 
-QList<LandObject *> ObjectsManager::getTrialCharacterObjectList(void)
+QList<LivingObject *> ObjectsManager::getTrialCharacterObjectList(void)
 {
-    return QList<LandObject *>;
+    return QList<LivingObject *>();
 }
