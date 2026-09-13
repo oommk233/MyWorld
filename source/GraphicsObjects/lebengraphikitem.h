@@ -15,8 +15,8 @@ public:
                        const QStyleOptionGraphicsItem *option,
                        QWidget *widget = 0) override;
 
-    virtual void setWidth(int width);
-    virtual void setHeight(int height);
+    virtual void setWidth(int width) override;
+    virtual void setHeight(int height) override;
 
     QRectF boundingRect() const override;
 

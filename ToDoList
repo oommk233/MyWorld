@@ -161,7 +161,7 @@ God Trial World
             
             a. Checking current implementation, the number of land shall be printed out? If not, fix it. (Done)
             aa. To note the golden rule onto the Gitlab server.
-            b. Creating a Character Object, the shall be put onto the Land Number 5, shall print its position out, the Number 5.
+            b. Creating a Character Object, the shall be put onto the Land Number 5, shall print its position out, the Number 5. （on going) (Print information is not so important, to implement keyboard event is more) ( But, yes, please create this Object first)
             bb. To review this Base Object - Real Object, its current implementation. It seems would bring big inheriting problem. 
             c. The Character Object, shall accept and print keyboard event, to show pressed key.
             d. By keyboard event, the Character Object shall be able to change its Land Number.
