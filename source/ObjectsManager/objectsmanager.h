@@ -47,7 +47,7 @@ public:
     // We use this class as factory for trail version
     void createTrialWorldLandObjects(void);
 
-    void createTrialCharacterObject(void);
+    void createTrialCharacterObjects(void);
 
     QList<LandObject *> getTrialWorldLandObjectList(void);
 
@@ -60,6 +60,7 @@ private:
     // Pair is under consideration.
 private:
     QList<LandObject *> m_landObjectList_;
+    QList<LivingObject *> m_livingObjectList_;
 };
 
 #endif // OBJECTSMANAGER_H

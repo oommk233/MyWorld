@@ -3,11 +3,13 @@
 
 ObjectsManager::ObjectsManager()
     : m_landObjectList_{}
+    , m_livingObjectList_{}
 {}
 
 ObjectsManager::~ObjectsManager()
 {
     m_landObjectList_.clear();
+    m_livingObjectList_.clear();
 }
 
 LandObject *ObjectsManager::createLandObject()
@@ -17,6 +19,12 @@ LandObject *ObjectsManager::createLandObject()
     this->m_landObjectList_.push_back(landObjectTemp);
 
     return landObjectTemp;
+}
+
+LivingObject *ObjectsManager::createLandObject(void)
+{
+    LivingObject *livingObject = new LivingObject();
+    // TBD
 }
 
 void ObjectsManager::createTrialWorldLandObjects(void)
@@ -52,10 +60,10 @@ void ObjectsManager::createTrialWorldLandObjects(void)
     return;
 }
 
-void ObjectsManager::createTrialCharacterObject(void) {
+void ObjectsManager::createTrialCharacterObjects(void)
+{
     // Now let's create our first Character in the Trial world
     // To make it living, and accept keyboard event!
-
 }
 
 QList<LandObject *> ObjectsManager::getTrialWorldLandObjectList(void)
