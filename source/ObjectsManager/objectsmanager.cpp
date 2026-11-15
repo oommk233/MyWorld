@@ -21,10 +21,14 @@ LandObject *ObjectsManager::createLandObject()
     return landObjectTemp;
 }
 
-LivingObject *ObjectsManager::createLandObject(void)
+LivingObject *ObjectsManager::createLivingObject(void)
 {
     LivingObject *livingObject = new LivingObject();
+
+
     // TBD
+
+    return livingObject;
 }
 
 void ObjectsManager::createTrialWorldLandObjects(void)

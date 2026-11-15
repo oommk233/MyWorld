@@ -55,6 +55,7 @@ public:
 
 private:
     LandObject *createLandObject(void);
+    LivingObject *createLivingObject(void);
 
     // we use vector first here.
     // Pair is under consideration.
